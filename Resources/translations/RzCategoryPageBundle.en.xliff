@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="label_category_has_page">
+                <source>label_category_has_page</source>
+                <target>Pages | Category</target>
+            </trans-unit>
+            <trans-unit id="breadcrumb.link_category_has_page_list">
+                <source>breadcrumb.link_category_has_page_list</source>
+                <target>Page | Category</target>
+            </trans-unit>
+            <trans-unit id="list.label_page">
+                <source>list.label_page</source>
+                <target>Page</target>
+            </trans-unit>
+            <trans-unit id="list.label_category">
+                <source>list.label_category</source>
+                <target>Category</target>
+            </trans-unit>
+            <trans-unit id="list.label_enabled">
+                <source>list.label_enabled</source>
+                <target>Enabled</target>
+            </trans-unit>
+            <trans-unit id="list.label_position">
+                <source>list.label_position</source>
+                <target>Position</target>
+            </trans-unit>
+            <trans-unit id="filter.label_page">
+                <source>filter.label_page</source>
+                <target>Page</target>
+            </trans-unit>
+            <trans-unit id="filter.label_category">
+                <source>filter.label_category</source>
+                <target>Category</target>
+            </trans-unit>
+            <trans-unit id="filter.label_enabled">
+                <source>filter.label_enabled</source>
+                <target>Enabled</target>
+            </trans-unit>
+            <trans-unit id="filter.label_position">
+                <source>filter.label_position</source>
+                <target>Position</target>
+            </trans-unit>
+            <trans-unit id="form.label_page">
+                <source>form.label_page</source>
+                <target>Page</target>
+            </trans-unit>
+            <trans-unit id="form.label_category">
+                <source>form.label_category</source>
+                <target>Category</target>
+            </trans-unit>
+            <trans-unit id="form.label_enabled">
+                <source>form.label_enabled</source>
+                <target>Enabled</target>
+            </trans-unit>
+            <trans-unit id="form.label_position">
+                <source>form.label_position</source>
+                <target>Position</target>
+            </trans-unit>
+            <trans-unit id="show.label_page">
+                <source>show.label_page</source>
+                <target>Page</target>
+            </trans-unit>
+            <trans-unit id="show.label_category">
+                <source>show.label_category</source>
+                <target>Category</target>
+            </trans-unit>
+            <trans-unit id="show.label_enabled">
+                <source>show.label_enabled</source>
+                <target>Enabled</target>
+            </trans-unit>
+            <trans-unit id="show.label_position">
+                <source>show.label_position</source>
+                <target>Position</target>
+            </trans-unit>
+            <trans-unit id="rz.category_page.block.service.category_post_list">
+                <source>rz.category_page.block.service.category_post_list</source>
+                <target>Post List By Category</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
