@@ -1,0 +1,2 @@
+# CategoryPageBundle
+Extension of ClassificationBundle
