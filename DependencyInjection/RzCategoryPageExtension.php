@@ -184,7 +184,7 @@ class RzCategoryPageExtension extends Extension
                 'fieldName'     => 'block',
                 'targetEntity'  => $config['class']['block'],
                 'cascade'       => array(
-                    'persist',
+                    1 => 'detach',
                 ),
                 'mappedBy'      => null,
                 'inversedBy'    => null,
@@ -192,6 +192,7 @@ class RzCategoryPageExtension extends Extension
                     array(
                         'name'                 => 'block_id',
                         'referencedColumnName' => 'id',
+                        'onDelete' => 'SET NULL',
                     ),
                 ),
                 'orphanRemoval' => false,
