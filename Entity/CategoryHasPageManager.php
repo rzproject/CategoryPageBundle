@@ -31,10 +31,13 @@ class CategoryHasPageManager extends BaseEntityManager
             $parameters['category'] = $criteria['category'];
         }
 
-        $query->setParameters($parameters)
-            ->setMaxResults(1);
+        $query->setParameters($parameters)->setMaxResults(1);
 
-        return $query->getQuery()->useResultCache(true, 3600)->getSingleResult();
+        try {
+            return $query->getQuery()->useResultCache(true, 3600)->getSingleResult();
+        } catch(\Doctrine\ORM\NoResultException $e) {
+            return;
+        }
     }
 
     public function findOneByPage($criteria) {
@@ -52,9 +55,12 @@ class CategoryHasPageManager extends BaseEntityManager
             $parameters['page'] = $criteria['page'];
         }
 
-        $query->setParameters($parameters)
-            ->setMaxResults(1);
+        $query->setParameters($parameters)->setMaxResults(1);
 
-        return $query->getQuery()->useResultCache(true, 3600)->getSingleResult();
+        try {
+            return $query->getQuery()->useResultCache(true, 3600)->getSingleResult();
+        } catch(\Doctrine\ORM\NoResultException $e) {
+            return;
+        }
     }
 }
