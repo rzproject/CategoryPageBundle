@@ -14,8 +14,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "rz/admin-bundle": "2.0.0.*",
-        "rz/doctrine-orm-admin-bundle": "2.0.0.*",
         "rz/page-bundle": "2.0.0.*",
         "rz/block-bundle": "2.0.0.*",
         "rz/classification-bundle": "2.0.0.*"
