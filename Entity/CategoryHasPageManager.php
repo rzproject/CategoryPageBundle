@@ -8,7 +8,8 @@ use Sonata\DatagridBundle\ProxyQuery\Doctrine\ProxyQuery;
 
 class CategoryHasPageManager extends BaseEntityManager
 {
-    public function categoryParentWalker($category, &$categories=array()) {
+    public function categoryParentWalker($category, &$categories=array())
+    {
         while ($category->getParent()) {
             $categories[] = array('category'=>$category, 'parent'=>$category->getParent());
             return $this->categoryParentWalker($category->getParent(), $categories);
@@ -16,8 +17,8 @@ class CategoryHasPageManager extends BaseEntityManager
         return $categories;
     }
 
-    public function findOneByCategory($criteria) {
-
+    public function findOneByCategory($criteria)
+    {
         $query = $this->getRepository()
             ->createQueryBuilder('chp')
             ->select('chp');
@@ -35,13 +36,13 @@ class CategoryHasPageManager extends BaseEntityManager
 
         try {
             return $query->getQuery()->useResultCache(true, 3600)->getSingleResult();
-        } catch(\Doctrine\ORM\NoResultException $e) {
+        } catch (\Doctrine\ORM\NoResultException $e) {
             return;
         }
     }
 
-    public function findOneByPage($criteria) {
-
+    public function findOneByPage($criteria)
+    {
         $query = $this->getRepository()
             ->createQueryBuilder('chp')
             ->select('chp');
@@ -59,7 +60,7 @@ class CategoryHasPageManager extends BaseEntityManager
 
         try {
             return $query->getQuery()->useResultCache(true, 3600)->getSingleResult();
-        } catch(\Doctrine\ORM\NoResultException $e) {
+        } catch (\Doctrine\ORM\NoResultException $e) {
             return;
         }
     }
