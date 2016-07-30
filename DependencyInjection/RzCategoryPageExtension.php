@@ -115,12 +115,12 @@ class RzCategoryPageExtension extends Extension
         $pageService['category_canonical'] = $config['page']['services']['category_canonical']['service'];
         $container->setParameter('rz.category_page.page.services',                          $pageService);
 
-        if(!$config['page']['templates']) {
+        if (!$config['page']['templates']) {
             throw new \RuntimeException(sprintf('Please define a default `page_templates` value for the class `%s`', get_class($this)));
         }
 
         $pageTemplates = [];
-        foreach($config['page']['templates'] as $key=>$value) {
+        foreach ($config['page']['templates'] as $key=>$value) {
             $pageTemplates[$value['template_code']] = $value['name'];
         }
 
@@ -147,7 +147,7 @@ class RzCategoryPageExtension extends Extension
             'cascade' => array(
                 'persist',
             ),
-            'mappedBy' => NULL,
+            'mappedBy' => null,
             'inversedBy' => 'categoryHasPage',
             'joinColumns' => array(
                 array(
@@ -159,7 +159,6 @@ class RzCategoryPageExtension extends Extension
         ));
 
         if (interface_exists('Sonata\PageBundle\Model\PageInterface')) {
-
             $collector->addAssociation($config['class']['category_has_page'], 'mapManyToOne', array(
                 'fieldName'     => 'page',
                 'targetEntity'  => $config['class']['page'],
@@ -179,7 +178,6 @@ class RzCategoryPageExtension extends Extension
         }
 
         if (interface_exists('Sonata\ClassificationBundle\Model\CategoryInterface')) {
-
             $collector->addAssociation($config['class']['category_has_page'], 'mapManyToOne', array(
                 'fieldName'     => 'block',
                 'targetEntity'  => $config['class']['block'],

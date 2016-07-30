@@ -5,7 +5,6 @@ use Sonata\PageBundle\Model\PageInterface;
 use Sonata\ClassificationBundle\Model\CategoryInterface;
 use Rz\CoreBundle\Model\RelationModelInterface;
 
-
 interface CategoryHasPageInterface extends RelationModelInterface
 {
     /**

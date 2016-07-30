@@ -16,7 +16,7 @@ use Sonata\AdminBundle\Form\Type\Filter\ChoiceType;
 class CategoryHasPageAdminController extends Controller
 {
 
-//    /**
+    //    /**
 //     * @param Request $request
 //     *
 //     * @return \Symfony\Component\HttpFoundation\Response
